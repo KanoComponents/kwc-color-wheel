@@ -16,6 +16,7 @@
   "resolutions": {
     "paper-styles": "^2.0.0",
     "iron-doc-viewer": "^3.0.0",
-    "iron-location": "1 - 2"
+    "iron-location": "1 - 2",
+    "webcomponentsjs": "^v1.0.2"
   }
 }
