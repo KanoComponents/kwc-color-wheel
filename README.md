@@ -5,17 +5,15 @@ A color wheel with magnifier
  - What is it called?
      - kwc-color-wheel
  - What is it made out of?
-     - Describe here the contents of this component
+     - A wheel showing a range of colors and a magnifier appearing on touch/mouse over
  - What variants are needed?
-     - Variant 1:
-     - Variant 2:
-     - Variant 3:
+     - None
  - How does it scale?
-     - Desktop: ...
-     - Mobile: ...
+     - Desktop: Uses mouse events ( magnifier on hover, value on click )
+     - Mobile/Touch: Uses touch events ( magnifier on touchstart, value on touchend )
  - What style variables are in use?
-     - Style 1: ...
-     - Style 2: ...
+     - Maginifier: Can style the border of the magnifier
+     - Size: Can change the size of the wheel
 
 ## Installation
 Clone this repository.

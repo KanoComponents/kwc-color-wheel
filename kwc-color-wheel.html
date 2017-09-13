@@ -49,7 +49,7 @@
                     type: Boolean,
                     value: false
                 },
-                radius: {
+                size: {
                     type: Number,
                     value: 170
                 }
@@ -146,7 +146,7 @@
                     this.wheelRect = this.$.canvas.getBoundingClientRect();
                     let x = pos.x - this.wheelRect.left,
                         y = pos.y - this.wheelRect.top,
-                        r = (this.radius - 2) / 2,
+                        r = (this.size - 2) / 2,
                         dist = Math.sqrt(Math.pow(r - x, 2) + Math.pow(r - y, 2)),
                         a = (Math.PI * 3 / 2) - Math.atan2(r - y, r - x),
                         h, s, l, rgbValue;
@@ -165,7 +165,7 @@
                 }
             },
             render() {
-                this._drawWheel(this.$.canvas, this.radius);
+                this._drawWheel(this.$.canvas, this.size);
             },
             _drawWheel(canvas, size) {
                 let r = (size - 2) / 2,
