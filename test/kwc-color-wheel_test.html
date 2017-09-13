@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>kwc-color-wheel test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+    <script src="../../iron-test-helpers/mock-interactions.js"></script>
+
+    <link rel="import" href="../kwc-color-wheel.html">
+</head>
+
+<body>
+    <test-fixture id="basic">
+        <template>
+            <kwc-color-wheel></kwc-color-wheel>
+        </template>
+    </test-fixture>
+
+    <script>
+        suite('kwc-color-wheel', function () {
+            test('instantiating the element works', function () {
+                var element = fixture('basic');
+                assert.equal(element.is, 'kwc-color-wheel');
+            });
+
+            test('touching the wheel sets the value', function () {
+                var element = fixture('basic');
+                MockInteractions.tap(element.$.canvas, { emulateTouch: true });
+                assert.notEqual(element.value, undefined);
+            });
+        });
+    </script>
+</body>
+
+</html>

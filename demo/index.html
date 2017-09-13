@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>kwc-color-wheel demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../kwc-color-wheel.html">
+
+    <custom-style>
+        <style is="custom-style" include="demo-pages-shared-styles">
+            demo-snippet {
+                --demo-snippet-demo: {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                };
+            }
+        </style>
+    </custom-style>
+</head>
+
+<body>
+    <div class="vertical-section-container centered">
+        <h3>Basic kwc-color-wheel demo</h3>
+        <demo-snippet>
+            <template>
+                <kwc-color-wheel></kwc-color-wheel>
+            </template>
+        </demo-snippet>
+        <h3>Different sizes</h3>
+        <demo-snippet>
+            <template>
+                <kwc-color-wheel radius="50"></kwc-color-wheel>
+                <kwc-color-wheel radius="170"></kwc-color-wheel>
+                <kwc-color-wheel radius="300"></kwc-color-wheel>
+            </template>
+        </demo-snippet>
+    </div>
+</body>
+
+</html>
