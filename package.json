@@ -1,0 +1,24 @@
+{
+  "description": "A color wheel with magnifier",
+  "name": "@kano/kwc-color-wheel",
+  "version": "3.0.0-beta.2",
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0",
+    "@webcomponents/webcomponentsjs": "2.0.0-beta.2"
+  },
+  "main": "kwc-color-wheel.js",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "@polymer/paper-styles": "^3.0.0-pre.18"
+  },
+  "devDependencies": {
+    "@polymer/iron-component-page": "^3.0.0-pre.18",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
+    "wct-browser-legacy": "^0.0.1-pre.11",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "@polymer/iron-test-helpers": "^3.0.0-pre.18"
+  }
+}
